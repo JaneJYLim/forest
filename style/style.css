@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/* 공통영역 시작 */
+* {
+    color: #666666;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: #c9cee4;
+}
+/* 공통영역 끝 */
+/* GuideLine */
+
+/* div#wrap {border: 1px solid #000;} */
+/* header#header{border: 1px solid #000;} */
+
+/* GuideLine */
+
+div#wrap {
+    width: 1370px;
+    margin: 10px auto;
+}
+/* header#header 영역 시작 */
+#header {
+    width: 1360px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
+#header #headerLogo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#header #gnb {
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+#gnb #mainMenu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#gnb #mainMenu>li{
+    width: 170px;
+    border: 1px solid #ccc;
+    float: left;
+}
+#gnb #mainMenu>li:not(:first-child){
+    border-left: none;
+}
+#gnb #mainMenu>li>a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+#gnb #mainMenu li:hover>a{
+    color: #ffffff;
+    background-color: #16a840;
+
+}
+.subMenu {
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+.subMenu li {
+    width: 170px;
+}
+.subMenu>li>a {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+}
+
+#slide {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#slide .arrowIcon{
+    margin-top: 130px;
+}
+#slideImg {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+#slideImg #slideShuttleFrame {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+#slideShuttleFrame .slidebox {
+    width: 267px;
+    height: 285px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+#slideShuttleFrame .slidebox span{
+    padding: 5px 15px;
+    display: inline-block;
+    }
+#slideShuttleFrame .slidebox span h4{
+    color: #16a840;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0 0;
+}
+#slideShuttleFrame .slidebox span h4 img{
+    vertical-align: middle;
+}
+#slideShuttleFrame .slidebox span p{
+    padding: 5px 0;
+}
+#slideShuttleFrame .slidebox span .address{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+/* header#header 영역 끝 */
+/* main#main영역 시작 */
+#main {
+    width: 1360px;
+    display: flex;
+    justify-content: space-between;
+}
+/* div#bbsSide 영역 시작 */
+#bbsSide {
+    width: 880px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    
+}
+
+#bbsSide button {
+    font-size: 24px;
+    padding: 20px 10px;
+    border: none;
+    margin-left: 20px;
+    background-color: #ffffff;
+    outline: none;
+}
+#bbsSide .bbsBtn {
+    color: #ff0000;
+    border-bottom: 4px solid #f00;
+    
+}
+#bbsSide .fa-check-circle {
+    font-size:24px;
+    color:red;
+}
+#bbsSide img {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+#bbsSide table {
+    padding: 20px 0;
+    border-top: 2px solid #ccc;
+    margin: 0 auto;
+
+}
+#bbsSide table td {
+    padding: 16px 4px;
+}
+#bbsSide table td:nth-child(2), table td:last-child {
+    width: 318px;
+}
+#bbsSide table td span {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 80px;
+    background-color: #eee;
+    display: inline-block;
+}
+#bbsSide table td span strong{
+    color: #ff0000;
+    font-size: 26px;
+    padding: 10px 0 0;
+    display: inline-block;
+}
+#bbsSide table td h1 {
+    color: #444;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+#bbsSide table td p {
+    font-size: 13px;
+}
+/* div#bbsSide 영역 끝 */
+
+
+#notice {
+    width: 460px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+}
+#notice #noticeHeader {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#noticeHeader h1{
+    color: #333333;
+    font-size: 24px;
+}
+#noticeHeader #noticeIcon img{
+    padding: 0 5px;
+}
+/* main#main영역 끝 */
